@@ -1,1 +1,78 @@
-// TODO
+.container {
+  img {
+    width: 100%;
+    max-width: 100vw;
+    max-height: 400px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 5rem 25.7% 5rem 24.3%; // 80px 370px 80px 350px at 1440 width screens
+
+  h1 {
+    margin-bottom: 25px;
+    line-height: 3.625rem;
+    font-size: 3rem;
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: 0.875rem;
+      color: var(--subtext);
+
+      svg {
+        font-size: 1rem;
+        margin-right: 0.625rem;
+      }
+
+      & + div {
+        margin-left: 1.875rem;
+      }
+    }
+  }
+
+  article {
+    margin-top: 4.0625rem;
+    font-family: Inter;
+    font-style: normal;
+    text-align: justify;
+    line-height: 140%;
+
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 2.25rem;
+      font-weight: bold;
+      line-height: 140%;
+      margin-bottom: 3rem;
+    }
+
+    p,
+    ul {
+      margin: 1.5rem 0;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+
+      li {
+        margin: 0.5rem 0;
+      }
+    }
+
+    section, span, p {
+      display: block;
+      line-height: 25.2px;
+      margin-bottom: 2rem;
+    }
+  }
+}

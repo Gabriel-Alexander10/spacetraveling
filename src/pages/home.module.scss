@@ -1,1 +1,66 @@
-// TODO
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 1;
+  width: 100%;
+  min-height: 100vh;
+  max-width: 1440px;
+  padding: 5rem 25.7%; // 370px em telas de 1440px
+
+  & > button {
+    outline: none;
+    border: 0;
+    background: transparent;
+    color: var(--highlight);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 4.0625rem;
+  }
+
+  img {
+    margin-bottom: 4.0625rem;
+  }
+
+  > div {
+    & + div {
+      margin-top: 3.125rem;
+    }
+
+    p {
+      margin-top: 0.5rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.5625rem;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0.875rem;
+    color: var(--subtext);
+
+    svg {
+      font-size: 1rem;
+      margin-right: 0.625rem;
+    }
+
+    & + div {
+      margin-left: 1.875rem;
+    }
+  }
+}
+
+
+
+
